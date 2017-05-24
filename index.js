@@ -5,6 +5,8 @@ var crypto = require('crypto');
 
 var app = new express();
 
+app.set('port', (process.env.PORT || 3000));
+
 // 設定靜態網頁
 app.use(express.static(__dirname + '/public'));
 
@@ -26,14 +28,14 @@ app.post('/imageupload', multer({
     console.log(req.file.originalname);
 
 
-    var uploadImage = require("./image_generate.js");
+    var imageProcess = require("./image_generate.js");
 
     var options = {
         path: req.file.path,
         filename: req.file.filename
     }
 
-    uploadImage.generate(options, (data) => {
+    imageProcess.generate(options, (data) => {
         console.log(data);
 
         var result = {
@@ -72,4 +74,8 @@ app.post('/imageupload', multer({
 
 });
 
-app.listen(3000, console.log("Listening on port 3000"));
+
+
+app.listen(app.get('port'), function() {
+    console.log('Node app is running on port', app.get('port'));
+});
