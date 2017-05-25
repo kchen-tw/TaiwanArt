@@ -19,17 +19,6 @@ footer {
     height: 100px;
 }
 
-#dragandrophandler {
-    border: 2px dotted #0B85A1;
-    width: 400px;
-    color: #92AAB0;
-    text-align: left;
-    vertical-align: middle;
-    padding: 10px 10px 10 10px;
-    margin-bottom: 10px;
-    font-size: 200%;
-}
-
 #intput-image-preview,
 #output-image-preview {
     width: 400px;
@@ -39,6 +28,8 @@ footer {
     background-color: #FFFFFF;
     color: #ecf0f1;
     border: 2px dotted #0B85A1;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 #intput-image-preview input {

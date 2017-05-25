@@ -4,37 +4,37 @@ $(document).ready(function() {
     $.uploadPreview({
         input_field: '#intput-image-upload',
         preview_box: '#intput-image-preview',
-        label_field: 'intput-image-label',
-        // label_default: '選擇影像',
-        // label_selected: '改變影像',
+        label_field: '#intput-image-label',
+        label_default: '選擇影像',
+        label_selected: '改變影像',
         success_callback: (file) => {
-            $('#btn-upload').attr('disabled', false);
+            // $('#btn-upload').attr('disabled', false);
 
-            $('#btn-upload').on('click', function() {
-                var loader = new Loader($('.loader-wrapper'));
-                loader.start();
-                // var data = new FormData();
-                if (file) {
-                    // data.append('file', file);
-                    var data = new FormData();
-                    data.append('upload', file);
-                    $.ajax({
-                        type: "POST",
-                        url: 'imageupload',
-                        data: data,
-                        cache: false,
-                        contentType: false,
-                        processData: false,
-                        success: function(data) {
-                            $('#output-image-preview')
-                                .css('background-image', 'url(' + data.image + ')')
-                                .css('background-size', 'cover')
-                                .css('background-position', 'center center');
-                            loader.end();
-                        }
-                    });
-                }
-            });
+            // $('#btn-upload').on('click', function() {
+            var loader = new Loader($('.loader-wrapper'));
+            loader.start();
+            // var data = new FormData();
+            if (file) {
+                // data.append('file', file);
+                var data = new FormData();
+                data.append('upload', file);
+                $.ajax({
+                    type: "POST",
+                    url: 'imageupload',
+                    data: data,
+                    cache: false,
+                    contentType: false,
+                    processData: false,
+                    success: function(data) {
+                        $('#output-image-preview')
+                            .css('background-image', 'url(' + data.image + ')')
+                            .css('background-size', 'cover')
+                            .css('background-position', 'center center');
+                        loader.end();
+                    }
+                });
+            }
+            // });
         }
     });
 
