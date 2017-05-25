@@ -11,7 +11,8 @@ $(document).ready(function() {
             $('#btn-upload').attr('disabled', false);
 
             $('#btn-upload').on('click', function() {
-
+                var loader = new Loader($('.loader-wrapper'));
+                loader.start();
                 // var data = new FormData();
                 if (file) {
                     // data.append('file', file);
@@ -25,13 +26,11 @@ $(document).ready(function() {
                         contentType: false,
                         processData: false,
                         success: function(data) {
-                            console.dir(data);
-
-
                             $('#output-image-preview')
                                 .css('background-image', 'url(' + data.image + ')')
                                 .css('background-size', 'cover')
                                 .css('background-position', 'center center');
+                            loader.end();
                         }
                     });
                 }
