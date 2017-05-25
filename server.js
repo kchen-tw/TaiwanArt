@@ -1,19 +1,21 @@
 var express = require('express');
 var multer = require('multer');
 var path = require('path');
-var crypto = require('crypto');
-
+var bodyParser = require('body-parser')
+var config = require('config');
 var app = new express();
 
 app.set('port', (process.env.PORT || 3000));
 
+app.use(bodyParser.json());
+
 // 設定靜態網頁
-app.use(express.static(__dirname + '/public'));
+app.use(express.static(config.local.output_dir));
 
 
 // get image from client
 var storage = multer.diskStorage({
-    destination: './uploads',
+    destination: config.local.input_dir,
     filename: function(req, file, cb) {
         cb(null, file.originalname + '.jpg');
     }
@@ -23,31 +25,29 @@ app.post('/imageupload', multer({
     storage: storage
 }).single('upload'), function(req, res) {
 
-
-    console.log(req);
-    console.log(req.file.originalname);
-
-
-    var imageProcess = require("./image_generate.js");
-
+    // var imageProcess = require("./image_generate.js");
+    var ssh = require("./ssh_connect.js");
     var options = {
         path: req.file.path,
         filename: req.file.filename
     }
-
-    imageProcess.generate(options, (data) => {
-        console.log(data);
-
-        var result = {
-            status: 'ok'
-        };
-        res.writeHead(200, {
-            'Content-Type': 'application/json',
-            'Access-Control-Allow-Origin': '*'
+    console.log(options);
+    ssh.setOptions(options)
+        .then(() => {
+            return ssh.upload();
+        })
+        .then(() => {
+            return ssh.process();
+        })
+        .then(() => {
+            return ssh.download();
+        })
+        .then((result) => {
+            res.json({ result: true, image: result })
         });
-        res.write(JSON.stringify(result));
-        res.end();
-    });
+
+
+
 
     ///// execute style transfer pipieline start////////
     // var exec = require('child_process').exec;
