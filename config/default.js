@@ -2,6 +2,7 @@ module.exports = {
     local: {
         input_dir: './uploads',
         output_dir: './public',
+        download_image_dir: './public/images',
         output_image_dir: './images'
     },
     cluster: {

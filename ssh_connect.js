@@ -87,7 +87,7 @@ exports.download = function() {
             conn.sftp(function(err, sftp) {
                 if (err) throw err;
 
-                var local_file = config.local.output_dir + '/' + config.local.output_image_dir + '/' + options.filename;
+                var local_file = config.local.download_image_dir + '/' + options.filename;
                 var remote_file = './' + config.cluster.output_dir + '/' + options.filename;
 
                 sftp.fastGet(remote_file, local_file, {}, function(downloadError) {
