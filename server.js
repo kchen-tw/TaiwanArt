@@ -3,10 +3,13 @@ var multer = require('multer');
 var path = require('path');
 var bodyParser = require('body-parser')
 var config = require('config');
+var fs = require('fs');
+
 var app = new express();
 
 app.set('port', (process.env.PORT || 3000));
 
+// 支援 json 輸出
 app.use(bodyParser.json());
 
 // 設定靜態網頁
@@ -20,6 +23,15 @@ var storage = multer.diskStorage({
         cb(null, file.originalname + '.jpg');
     }
 });
+
+// 列出上傳過的圖片
+app.get('/list', function(req, res) {
+    fs.readdir(config.local.download_image_dir, function(err, items) {
+        res.json(items);
+    });
+});
+
+
 
 app.post('/imageupload', multer({
     storage: storage
