@@ -61,19 +61,19 @@ exports.process = function() {
                     conn.end();
                     resolve();
                 }).on('data', function(data) {
-                    console.log('STDOUT: ' + data);
+                    // console.log(`Received ${chunk.length} bytes of data.`);
+                    console.log(`STDOUT: ${data}`);
                 }).stderr.on('data', function(data) {
                     console.log('STDERR: ' + data);
                 });
-                stream.write('cd ' + config.cluster.output_dir + '\n');
-                stream.write('rm *.jpg\n');
-                stream.write('cd ' + '~/' + config.cluster.styleTransferDir + '\n');
                 var input_filename = '~/' + config.cluster.input_dir + '/' + options.filename;
                 var output_filename = '~/' + config.cluster.output_dir + '/' + options.filename;
                 var model_filename = '~/' + config.cluster.model;
+                // stream.write('cd ' + config.cluster.output_dir + '\n');
+                stream.write(`rm ${output_filename}\n`);
+                stream.write(`cd ~/${config.cluster.styleTransferDir}\n`);
                 stream.write('python generate.py ' + input_filename + ' -m ' + model_filename + ' -o ' + output_filename + ' -g ' + config.cluster.gpu + ' \n');
-                stream.write('cd ' + '~/' + config.cluster.input_dir + '\n');
-                stream.write('rm *.jpg\n');
+                stream.write(`rm ${input_filename}\n`);
                 stream.end('exit\n');
             });
         }).connect(connSettings);
