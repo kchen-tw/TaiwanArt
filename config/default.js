@@ -13,6 +13,7 @@ module.exports = {
         styleTransferDir: 'NTU2017DeepArt/src/chainer-fast-neuralstyle',
         model: 'NTU2017DeepArt/src/chainer-fast-neuralstyle/models/OCT1_06.model',
         input_dir: 'NTU2017DeepArt/ForApp/imagesFromApp',
-        output_dir: 'NTU2017DeepArt/ForApp/imagesToApp'
+        output_dir: 'NTU2017DeepArt/ForApp/imagesToApp',
+        gpu: "-1"
     }
 }

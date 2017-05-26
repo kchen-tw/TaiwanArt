@@ -71,7 +71,7 @@ exports.process = function() {
                 var input_filename = '~/' + config.cluster.input_dir + '/' + options.filename;
                 var output_filename = '~/' + config.cluster.output_dir + '/' + options.filename;
                 var model_filename = '~/' + config.cluster.model;
-                stream.write('python generate.py ' + input_filename + ' -m ' + model_filename + ' -o ' + output_filename + ' -g 0 \n');
+                stream.write('python generate.py ' + input_filename + ' -m ' + model_filename + ' -o ' + output_filename + ' -g ' + config.cluster.gpu + ' \n');
                 stream.write('cd ' + '~/' + config.cluster.input_dir + '\n');
                 stream.write('rm *.jpg\n');
                 stream.end('exit\n');
