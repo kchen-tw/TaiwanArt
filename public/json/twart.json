@@ -1,0 +1,23 @@
+[{
+        "painter": "陳澄波",
+        "painting": [{
+                "name": "淡水夕照",
+                "imgurl": "https://i.imgur.com/xsWzJoW.jpg",
+                "model": "OCT1_35.model"
+            },
+            {
+                "name": "清流",
+                "imgurl": "https://i.imgur.com/2A5poTz.jpg",
+                "model": "OCS1_03.model"
+            }
+        ]
+    },
+    {
+        "painter": "倪蔣懷",
+        "painting": [{
+            "name": "田寮港畔看基隆郵局",
+            "imgurl": "https://i.imgur.com/LIgck13.jpg",
+            "model": "NI_Keelung02.model"
+        }]
+    }
+]
