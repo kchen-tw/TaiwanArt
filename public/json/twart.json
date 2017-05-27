@@ -9,6 +9,16 @@
                 "name": "清流",
                 "imgurl": "https://i.imgur.com/2A5poTz.jpg",
                 "model": "OCS1_03.model"
+            },
+            {
+                "name": "嘉義街景",
+                "imgurl": "https://i.imgur.com/EETjohr.jpg",
+                "model": "OCS1_03.model"
+            },
+            {
+                "name": "玉山積雪",
+                "imgurl": "https://i.imgur.com/ql0dvWK.jpg",
+                "model": "OW1_05.model"
             }
         ]
     },
@@ -19,5 +29,27 @@
             "imgurl": "https://i.imgur.com/LIgck13.jpg",
             "model": "NI_Keelung02.model"
         }]
-    }
+    },
+    {
+        "painter": "陳植棋",
+        "painting": [{
+            "name": "台灣風景",
+            "imgurl": "https://i.imgur.com/csXWZA3.jpg",
+            "model": "chenchihchi_Taiwan.model"
+        }]
+    },
+    {
+        "painter": "石川欽一郎",
+        "painting": [{
+            "name": "台中豐原道",
+            "imgurl": "https://i.imgur.com/RUbHHTb.jpg",
+            "model": "Ishikawa_Taichung.model"
+        },
+        {
+            "name": "總督府",
+            "imgurl": "https://i.imgur.com/drIvSH1.jpg",
+            "model": "Ishikawa_taiwan.model"
+        }
+        ]
+    },
 ]
