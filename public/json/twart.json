@@ -23,14 +23,6 @@
         ]
     },
     {
-        "painter": "倪蔣懷",
-        "painting": [{
-            "name": "田寮港畔看基隆郵局",
-            "imgurl": "https://i.imgur.com/LIgck13.jpg",
-            "model": "NI_Keelung02.model"
-        }]
-    },
-    {
         "painter": "陳植棋",
         "painting": [{
             "name": "台灣風景",
@@ -52,4 +44,12 @@
         }
         ]
     },
+    {
+        "painter": "倪蔣懷",
+        "painting": [{
+            "name": "田寮港畔看基隆郵局",
+            "imgurl": "https://i.imgur.com/LIgck13.jpg",
+            "model": "NI_Keelung02.model"
+        }]
+    }
 ]
