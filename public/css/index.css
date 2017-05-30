@@ -19,6 +19,53 @@ footer {
     height: 80px;
 }
 
+.jumbotron {
+    background-image: url('/img/background_white_curve.png');
+    border-radius: 0.9rem;
+}
+
+.jumbotron div.slogan {
+    text-align: right;
+    padding-right: 2em;
+}
+
+.jumbotron div.twart {
+    color: rgba(153, 102, 0, 0.6);
+    font-size: 3em;
+    font-weight: 700;
+    margin-right: 0.2em;
+    display: inline;
+}
+
+.jumbotron div.explore {
+    color: rgba(153, 153, 153, 0.6);
+    font-size: 2.5em;
+    font-weight: 700;
+    margin-right: 0.2em;
+    display: inline;
+}
+
+.jumbotron div.explore-en {
+    color: rgba(102, 102, 102, 1);
+    font-size: 2em;
+    font-family: Copperplate, "Copperplate Gothic Light", fantasy;
+    font-weight: 800;
+}
+
+.jumbotron div.with-en {
+    color: rgba(153, 102, 0, 0.4);
+    font-size: 1.5em;
+    font-family: Copperplate, "Copperplate Gothic Light", fantasy;
+    font-weight: 800;
+}
+
+.jumbotron div.twart-en {
+    color: rgba(153, 102, 0, 0.4);
+    font-size: 1.5em;
+    font-family: Copperplate, "Copperplate Gothic Light", fantasy;
+    font-weight: 800;
+}
+
 #intput-image-preview,
 #output-image-preview {
     width: 400px;
