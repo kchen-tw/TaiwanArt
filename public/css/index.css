@@ -71,6 +71,57 @@ footer {
     font-weight: 800;
 }
 
+.profileimg {
+    width: 120px;
+    height: 160px;
+    position: relative;
+    overflow: hidden;
+    margin-left: auto;
+    margin-right: auto;
+    background-image: url("/img/painter/chen_chengpo.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.painter_name {
+    color: rgba(51, 51, 51, 1);
+    font-size: 1.5em;
+    font-weight: 700;
+    margin-top: 15px
+}
+
+.painter_dates {
+    color: rgba(121, 121, 121, 1);
+    font-size: 1.2em;
+    font-weight: 700;
+}
+
+.painter_introduction {
+    color: rgba(51, 51, 51, 1);
+    margin-top: 15px;
+    font-size: 1em;
+    font-weight: 400;
+}
+
+div.more {
+    text-align: right;
+    margin-top: 15px;
+}
+
+.btn-more {
+    color: rgba(152, 102, 0, 0.5);
+    background-image: none;
+    background-color: transparent;
+    border-color: rgba(152, 102, 0, 0.5);
+    margin-right: 10px;
+}
+
+.btn-more:hover {
+    color: #fff;
+    background-color: rgba(152, 102, 0, 0.5);
+    border-color: rgba(153, 102, 0, 0.5);
+}
+
 #intput-image-preview,
 #output-image-preview {
     width: 400px;
