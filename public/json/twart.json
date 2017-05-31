@@ -1,11 +1,11 @@
 [{
         "painter": "陳澄波",
-        "profileimg": "chenPo_profile_image.jpg",
+        "profileimg": "chen_chengpo.jpg",
         "homepage": "",
         "painting": [{
                 "name": "淡水夕照",
                 "imgurl": "https://i.imgur.com/xsWzJoW.jpg",
-                "model": "OCT1_35.model"
+                "model": "OCT1_35"
             },
             {
                 "name": "清流",
@@ -28,30 +28,30 @@
         "painter": "陳植棋",
         "homepage": "",
         "painting": [{
-            "name": "自畫像",
-            "imgurl": "https://i.imgur.com/WbKjU85.jpg",
-            "model": "chenchihchi_self.model"
-        },
-        {
-            "name": "台灣風景",
-            "imgurl": "https://i.imgur.com/csXWZA3.jpg",
-            "model": "chenchihchi_Taiwan.model"
-        }
-    ]
+                "name": "自畫像",
+                "imgurl": "https://i.imgur.com/WbKjU85.jpg",
+                "model": "chenchihchi_self.model"
+            },
+            {
+                "name": "台灣風景",
+                "imgurl": "https://i.imgur.com/csXWZA3.jpg",
+                "model": "chenchihchi_Taiwan.model"
+            }
+        ]
     },
     {
         "painter": "石川欽一郎",
         "homepage": "",
         "painting": [{
-            "name": "台中豐原道",
-            "imgurl": "https://i.imgur.com/RUbHHTb.jpg",
-            "model": "Ishikawa_Taichung.model"
-        },
-        {
-            "name": "總督府",
-            "imgurl": "https://i.imgur.com/drIvSH1.jpg",
-            "model": "Ishikawa_taiwan.model"
-        }
+                "name": "台中豐原道",
+                "imgurl": "https://i.imgur.com/RUbHHTb.jpg",
+                "model": "Ishikawa_Taichung.model"
+            },
+            {
+                "name": "總督府",
+                "imgurl": "https://i.imgur.com/drIvSH1.jpg",
+                "model": "Ishikawa_taiwan.model"
+            }
         ]
     },
     {
@@ -67,15 +67,16 @@
         "painter": "黃榮燦",
         "homepage": "",
         "painting": [{
-            "name": "台灣農民作家楊逵之家",
-            "imgurl": "https://i.imgur.com/Fnmb16k.jpg",
-            "model": "Huang_Home_of_the_Farmer_Writer_Yang_Kui_in_Taiwan.model"
-        },
-        {
-            "name": "恐怖的檢查",
-            "imgurl": "https://i.imgur.com/d9WfQLr.jpg",
-            "model": "Huang_Pullover.model"
-        }]
+                "name": "台灣農民作家楊逵之家",
+                "imgurl": "https://i.imgur.com/Fnmb16k.jpg",
+                "model": "Huang_Home_of_the_Farmer_Writer_Yang_Kui_in_Taiwan.model"
+            },
+            {
+                "name": "恐怖的檢查",
+                "imgurl": "https://i.imgur.com/d9WfQLr.jpg",
+                "model": "Huang_Pullover.model"
+            }
+        ]
     },
     {
         "painter": "黃土水",

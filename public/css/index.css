@@ -24,6 +24,11 @@ footer {
     border-radius: 0.9rem;
 }
 
+.jumbotron h1.twart {
+    font-family: Copperplate, "Copperplate Gothic Light", fantasy;
+    font-weight: 800;
+}
+
 .jumbotron div.slogan {
     text-align: right;
     padding-right: 2em;
