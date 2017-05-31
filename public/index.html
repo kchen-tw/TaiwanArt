@@ -15,85 +15,155 @@
 </head>
 
 <body>
-    <div class="container">
-        <div class="jumbotron">
-            <h1 class="twart">Taiwan Art</h1>
-            <div class="slogan">
-                <div class="explore">用</div>
-                <div class="twart">台灣的藝術</div>
-                <div class="explore">探索世界</div>
-            </div>
-            <div class="slogan">
-                <div class="explore explore-en">Explore the World</div>
-                <div class="explore with-en">with</div>
-                <div class="twart twart-en">Taiwan Artists &amp; Their Friends</div>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-md-3">
-                <div class="profileimg"></div>
-            </div>
-            <div class="col-md-3">
-                <div class="painter_name">陳澄波</div>
-                <div class="painter_dates">台灣(1895 - 1947)</div>
-            </div>
-            <div class="col">
-                <div class="painter_introduction">
-                    台灣、東京、上海，是他認真生活過的地方，不管在哪，他都默默的為周遭付出與奉獻，是個人人愛戴的紳士，他的夢想是讓社會更好，或許是因為太正直，變成二二八的受難者。他的一生讓我們看見一個時代的擾動與不捨。
+    <section class="logo">
+        <div class="container">
+            <div class="jumbotron">
+                <!--<h1 class="twart">Taiwan Art</h1>-->
+                <div><img class="logo" src="/img/logo.png"></div>
+                <div class="slogan">
+                    <div class="explore">用</div>
+                    <div class="twart">台灣的藝術</div>
+                    <div class="explore">探索世界</div>
                 </div>
-                <div class="more">
-                    <button class=" btn btn-outline-warning btn-more">更多故事</button>
+                <div class="slogan">
+                    <div class="explore explore-en">Explore the World</div>
+                    <div class="explore with-en">with</div>
+                    <div class="twart twart-en">Taiwan Artists &amp; Their Friends</div>
                 </div>
             </div>
-        </div>
-        <div class="separator "></div>
-        <div class="row ">
-            <div class="col ">
-                <div class="form-group ">
-                    <div class="page-header " for="input-model ">
-                        <h3>請先選擇畫家</h3>
+    </section>
+    <section class="painter">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3">
+                    <div class="profileimg"></div>
+                </div>
+                <div class="col-md-3">
+                    <div class="painter-name">陳澄波</div>
+                    <div class="painter-dates">台灣(1895 - 1947)</div>
+                </div>
+                <div class="col">
+                    <div class="painter-introduction">
+                        台灣、東京、上海，是他認真生活過的地方，不管在哪，他都默默的為周遭付出與奉獻，是個人人愛戴的紳士，他的夢想是讓社會更好，或許是因為太正直，變成二二八的受難者。他的一生讓我們看見一個時代的擾動與不捨。
                     </div>
-                    <select class="form-control " id="input-model ">
+                    <div class="more">
+                        <button class=" btn btn-outline-warning btn-more">更多故事</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <div class="separator"></div>
+    <section class="painting">
+        <div class="container">
+            <div class="row">
+                <div class="col-auto">
+                    <div class="painting">
+                        <div class="painting-img">
+                            <img class="card-img-top" style="width: 20rem;" src="./img/painting/OW1_05.jpg">
+                        </div>
+                        <div class="painting-name">
+                            玉山積雪
+                        </div>
+                    </div>
+                </div>
+                <div class="col-auto">
+                    <div class="painting">
+                        <div class="painting-img">
+                            <img class="card-img-top" style="width: 20rem;" src="./img/painting/OW1_05.jpg">
+                        </div>
+                        <div class="painting-name">
+                            玉山積雪
+                        </div>
+                    </div>
+                </div>
+                <div class="col-auto">
+                    <div class="painting">
+                        <div class="painting-img">
+                            <img class="card-img-top" style="width: 20rem;" src="./img/painting/OW1_05.jpg">
+                        </div>
+                        <div class="painting-name">
+                            玉山積雪
+                        </div>
+                    </div>
+                </div>
+                <div class="col-auto">
+                    <div class="painting">
+                        <div class="painting-img">
+                            <img class="card-img-top" style="width: 20rem;" src="./img/painting/OW1_05.jpg">
+                        </div>
+                        <div class="painting-name">
+                            玉山積雪
+                        </div>
+                    </div>
+                </div>
+                <div class="col-auto">
+                    <div class="painting">
+                        <div class="painting-img">
+                            <img class="card-img-top" style="width: 20rem;" src="./img/painting/OW1_05.jpg">
+                        </div>
+                        <div class="painting-name">
+                            玉山積雪
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <div class="separator"></div>
+    <section class="style-transfer">
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <div class="form-group">
+                        <div class="page-header" for="input-model">
+                            <h3>請先選擇畫家</h3>
+                        </div>
+                        <select class="form-control" id="input-model">
                             <option>陳澄波</option>
                         </select>
-                </div>
-            </div>
-        </div>
-        <div class="separator "></div>
-        <div class="row ">
-            <div class="col ">
-                <div class="page-header ">
-                    <h3>影像上傳</h3>
-                </div>
-
-                <div class="form-group ">
-
-                    <div id="intput-image-preview ">
-                        <label for="intput-image-upload " id="intput-image-label ">選擇影像</label>
-                        <input type="file " name="upload " id="intput-image-upload " accept="image/* " required />
                     </div>
                 </div>
-
-
             </div>
-            <div class="col ">
-                <div class="page-header ">
-                    <h3>輸出結果</h3>
-                </div>
-                <div id="output-image-preview ">
+            <div class="separator"></div>
+            <div class="row">
+                <div class="col">
+                    <div class="page-header">
+                        <h3>影像上傳</h3>
+                    </div>
 
+                    <div class="form-group">
+
+                        <div id="intput-image-preview">
+                            <label for="intput-image-upload" id="intput-image-label ">選擇影像</label>
+                            <input type="file" name="upload" id="intput-image-upload " accept="image/* " required />
+                        </div>
+                    </div>
+
+
+                </div>
+                <div class="col">
+                    <div class="page-header">
+                        <h3>輸出結果</h3>
+                    </div>
+                    <div id="output-image-preview">
+
+                    </div>
                 </div>
             </div>
         </div>
+    </section>
 
-        <div class="row ">
+    <section class="footer">
+        <div class="row">
             <div class="col ">
-                <footer class="text-center ">
-                    <div> © 2017 Chloe Su and Kun Chen</div>
+                <footer class="text-center">
+                    <div> © 2017 Chloe Su and Kun Chen, Logo desiner by Yang,Yen-Ching</div>
                 </footer>
             </div>
         </div>
-    </div>
+    </section>
+
     <div class="loader-wrapper hide ">
         <div class="loader "></div>
     </div>
@@ -101,8 +171,8 @@
     <script type="text/javascript " src="./js/jquery-3.2.1.js "></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js " integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb " crossorigin="anonymous "></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js " integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn " crossorigin="anonymous "></script>
-    <script type="text/javascript " src="./js/jquery.uploadPreview.js "></script>
     <script type="text/javascript " src="./js/loader.js "></script>
+    <script type="text/javascript " src="./js/jquery.uploadPreview.js "></script>
     <script type="text/javascript " src="./js/index.js "></script>
 </body>
 

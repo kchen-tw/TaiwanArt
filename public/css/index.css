@@ -7,6 +7,46 @@ body {
     height: 50px;
 }
 
+#intput-image-preview,
+#output-image-preview {
+    width: 400px;
+    height: 400px;
+    position: relative;
+    overflow: hidden;
+    background-color: #FFFFFF;
+    color: #ecf0f1;
+    border: 2px dotted #0B85A1;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#intput-image-preview input {
+    line-height: 200px;
+    font-size: 200px;
+    position: absolute;
+    opacity: 0;
+    z-index: 10;
+}
+
+#intput-image-preview label {
+    position: absolute;
+    z-index: 5;
+    opacity: 0.8;
+    cursor: pointer;
+    background-color: #92AAB0;
+    width: 200px;
+    height: 50px;
+    font-size: 20px;
+    line-height: 50px;
+    text-transform: uppercase;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    text-align: center;
+}
+
 .page-header {
     margin-bottom: 30px;
     border-bottom-style: solid;
@@ -22,6 +62,11 @@ footer {
 .jumbotron {
     background-image: url('/img/background_white_curve.png');
     border-radius: 0.9rem;
+}
+
+.logo {
+    width: auto;
+    /*height: 50px;*/
 }
 
 .jumbotron h1.twart {
@@ -83,20 +128,20 @@ footer {
     background-repeat: no-repeat;
 }
 
-.painter_name {
+.painter-name {
     color: rgba(51, 51, 51, 1);
     font-size: 1.5em;
     font-weight: 700;
     margin-top: 15px
 }
 
-.painter_dates {
+.painter-dates {
     color: rgba(121, 121, 121, 1);
     font-size: 1.2em;
     font-weight: 700;
 }
 
-.painter_introduction {
+.painter-introduction {
     color: rgba(51, 51, 51, 1);
     margin-top: 15px;
     font-size: 1em;
@@ -122,42 +167,22 @@ div.more {
     border-color: rgba(153, 102, 0, 0.5);
 }
 
-#intput-image-preview,
-#output-image-preview {
-    width: 400px;
-    height: 400px;
-    position: relative;
-    overflow: hidden;
-    background-color: #FFFFFF;
-    color: #ecf0f1;
-    border: 2px dotted #0B85A1;
-    margin-left: auto;
-    margin-right: auto;
+div.painting {
+    /*display: inline;*/
+    margin-left: 1em;
+    margin-right: 1em;
+    box-shadow: 0px 4px 20px 0px rgba(0, 0, 0, 0.2);
 }
 
-#intput-image-preview input {
-    line-height: 200px;
-    font-size: 200px;
-    position: absolute;
-    opacity: 0;
-    z-index: 10;
-}
-
-#intput-image-preview label {
-    position: absolute;
-    z-index: 5;
-    opacity: 0.8;
-    cursor: pointer;
-    background-color: #92AAB0;
-    width: 200px;
-    height: 50px;
-    font-size: 20px;
-    line-height: 50px;
-    text-transform: uppercase;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    margin: auto;
+section.painting {
     text-align: center;
+}
+
+.painting-name {
+    color: rgba(152, 102, 0, 0.5);
+    text-align: center;
+    font-size: 1.2em;
+    margin-top: 0.5em;
+    margin-bottom: 1em;
+    padding-bottom: 0.5em;
 }
