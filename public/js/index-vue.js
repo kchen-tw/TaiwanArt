@@ -53,7 +53,7 @@ $(function() {
                 {
                     "name": "台灣風景",
                     "imgurl": "https://i.imgur.com/csXWZA3.jpg",
-                    "imgfile": "chenchihchi_Taiwan.jpg",
+                    "imgfile": "chenchihchi_Taiwan.png",
                     "model": "chenchihchi_Taiwan"
                 }
             ]
