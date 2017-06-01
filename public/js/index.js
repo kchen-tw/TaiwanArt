@@ -1,6 +1,17 @@
 // 當文件都下載完後執行
 $(document).ready(function() {
     $('#btn-upload').attr('disabled', true);
+
+    $('#input-model').bind('change', function(event) {
+        console.log(this.value);
+        var artist = this.value;
+
+        $('html, body').stop().animate({
+            scrollTop: ($('#' + artist).offset().top - 60)
+        }, 1450, 'easeInOutExpo');
+        event.preventDefault();
+    });
+
     $.uploadPreview({
         input_field: '#intput-image-upload',
         preview_box: '#intput-image-preview',

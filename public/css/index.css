@@ -9,9 +9,20 @@ body {
 
 .separator-line {
     border-bottom-style: solid;
-    border-bottom-width: 2px;
+    border-bottom-width: 1.5px;
     margin-bottom: 40px;
-    border-bottom-color: rgba(152, 120, 0, 0.5);
+    border-bottom-color: rgba(152, 102, 0, 0.5);
+}
+
+.page-header {
+    margin-bottom: 30px;
+    border-bottom-style: solid;
+    border-bottom-width: 1.5px;
+    border-bottom-color: rgba(152, 102, 0, 0.5);
+}
+
+.page-header>h3 {
+    color: rgba(152, 102, 0, 0.5);
 }
 
 #intput-image-preview,
@@ -52,13 +63,6 @@ body {
     bottom: 0;
     margin: auto;
     text-align: center;
-}
-
-.page-header {
-    margin-bottom: 30px;
-    border-bottom-style: solid;
-    border-bottom-width: 1px;
-    border-bottom-color: #999;
 }
 
 footer {
