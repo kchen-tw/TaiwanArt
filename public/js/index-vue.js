@@ -49,7 +49,12 @@ $(function() {
                     "name": "台灣風景",
                     "imgfile": "chenchichi_Taiwan.png",
                     "model": "chenchichi_Taiwan"
-                }
+                },
+                {
+                    "name": "淡水教堂",
+                    "imgfile": "chenchichi_Dashuchurch.jpg",
+                    "model": "chenchichi__Dashuchurch"
+                },
             ]
         },
         {
