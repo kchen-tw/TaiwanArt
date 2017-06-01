@@ -158,16 +158,16 @@ $(function() {
     ];
 
     var loader = new Loader($('.loader-wrapper'));
+    var painter_select = new Vue({
+        el: "#painter-select",
+        data: {
+            painters
+        }
+    });
     var painter_list = new Vue({
         el: "#painter-list",
         data: {
             painters
         }
-        // beforeCreate: function() {
-        //     loader.start();
-        // },
-        // ready: function() {
-        //     loader.end();
-        // }
-    })
+    });
 })

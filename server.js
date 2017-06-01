@@ -40,10 +40,10 @@ app.post('/imageupload', multer({
     // var imageProcess = require("./image_generate.js");
     var ssh = require("./ssh_connect.js");
     var options = {
-        path: req.file.path,
-        filename: req.file.filename
-    }
-    console.log(options);
+            path: req.file.path,
+            filename: req.file.filename
+        }
+        // console.log(options);
     ssh.setOptions(options)
         .then(() => {
             return ssh.upload();

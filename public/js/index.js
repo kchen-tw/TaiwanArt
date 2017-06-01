@@ -2,12 +2,23 @@
 $(document).ready(function() {
     $('#btn-upload').attr('disabled', true);
 
-    $('#input-model').bind('change', function(event) {
+    $('body').scrollspy({
+        target: 'section.logo',
+        offset: 60
+    });
+
+    $('img.painting-img').on('click', function(event) {
+        var name = $(this).attr('data-name');
+        var model = $(this).attr('data-model');
+        $('#imgUploadModal .modal-title').text(name);
+        $('#imgUploadModal').modal('show')
+    });
+    $('#painter-select').bind('change', function(event) {
         console.log(this.value);
         var artist = this.value;
 
         $('html, body').stop().animate({
-            scrollTop: ($('#' + artist).offset().top - 60)
+            scrollTop: ($('#' + artist).offset().top - 30)
         }, 1450, 'easeInOutExpo');
         event.preventDefault();
     });

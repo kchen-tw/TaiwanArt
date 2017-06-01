@@ -231,3 +231,8 @@ div.painting {
     width: auto;
     max-width: 100%;
 }
+
+.modal-dialog {
+    width: auto;
+    max-width: 80%;
+}
