@@ -46,13 +46,13 @@ $(function() {
             "introduction": "「人生是短促的，藝術才是永遠。」這是陳植棋再赴日留學歡送會上說的，沒想到，他卻親自實現了這句話。他具有梵谷的熱情、高更的睿智、羅特列克的放縱，卻與席勒一樣，英年早逝。",
             "paintings": [{
                     "name": "自畫像",
-                    "imgfile": "chenchihchi_self.jpg", 
+                    "imgfile": "chenchichi_self.jpg", 
                     "model": "chenchihchi_self"
                 },
                 {
                     "name": "台灣風景",
                     "imgurl": "https://i.imgur.com/csXWZA3.jpg",
-                    "imgfile": "chenchihchi_Taiwan.png",
+                    "imgfile": "chenchihchi_Taiwan.png"
                     "model": "chenchihchi_Taiwan"
                 },
                 {
