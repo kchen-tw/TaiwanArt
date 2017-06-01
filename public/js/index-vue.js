@@ -13,25 +13,21 @@ $(function() {
             "introduction": "「我是油彩的化身。」1895，是個時代的改變，他來到了這世界；1945，他離開了，也是因為時代的改變。在他年輕的歲月裡，父母相繼過世，依靠叔父的他，每天除了上學，還要撿柴、撿蕃薯，但這沒改變他的求學熱情，長大後他反而成為了一個熱心助人的藝術家，以純真浪漫的性情，表現出了台灣迷人的特質。二二八事件後，他因參與和平使節，被他所認同的政府無情的槍決...",
             "paintings": [{
                     "name": "淡水夕照",
-                    "imgurl": "https://i.imgur.com/xsWzJoW.jpg",
                     "imgfile": "OCT1_35.jpg",
                     "model": "OCT1_35"
                 },
                 {
                     "name": "清流",
-                    "imgurl": "https://i.imgur.com/2A5poTz.jpg",
                     "imgfile": "OCS1_03.jpg",
                     "model": "OCS1_03"
                 },
                 {
                     "name": "嘉義街景",
-                    "imgurl": "https://i.imgur.com/EETjohr.jpg",
                     "imgfile": "OCS1_03.jpg",
                     "model": "OCS1_03"
                 },
                 {
                     "name": "玉山積雪",
-                    "imgurl": "https://i.imgur.com/ql0dvWK.jpg",
                     "imgfile": "OW1_05.jpg",
                     "model": "OW1_05"
                 }
@@ -46,13 +42,11 @@ $(function() {
             "introduction": "「人生是短促的，藝術才是永遠。」這是陳植棋再赴日留學歡送會上說的，沒想到，他卻親自實現了這句話。他具有梵谷的熱情、高更的睿智、羅特列克的放縱，卻與席勒一樣，英年早逝。",
             "paintings": [{
                     "name": "自畫像",
-                    "imgurl": "https://i.imgur.com/WbKjU85.jpg",
                     "imgfile": "chenchichi_self.jpg",
                     "model": "chenchihchi_self"
                 },
                 {
                     "name": "台灣風景",
-                    "imgurl": "https://i.imgur.com/csXWZA3.jpg",
                     "imgfile": "chenchihchi_Taiwan.png",
                     "model": "chenchihchi_Taiwan"
                 }
