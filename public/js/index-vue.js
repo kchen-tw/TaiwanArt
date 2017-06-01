@@ -26,8 +26,8 @@ $(function() {
                 {
                     "name": "嘉義街景",
                     "imgurl": "https://i.imgur.com/EETjohr.jpg",
-                    "imgfile": "OCS1_03.jpg",
-                    "model": "OCS1_03"
+                    "imgfile": "OCS1_06.jpg",
+                    "model": "OCS1_06"
                 },
                 {
                     "name": "玉山積雪",
@@ -55,6 +55,18 @@ $(function() {
                     "imgurl": "https://i.imgur.com/csXWZA3.jpg",
                     "imgfile": "chenchihchi_Taiwan.png",
                     "model": "chenchihchi_Taiwan"
+                },
+                {
+                    "name": "淡水教堂",
+                    "imgurl": "",
+                    "imgfile": "chenchichi_Dashuchurch.jpg",
+                    "model": "chenchihchi_Dashuchurch"
+                },
+                {
+                    "name": "柿子與八角盤",
+                    "imgurl": "",
+                    "imgfile": "chenchichi_food.jpg",
+                    "model": "chenchihchi_food"
                 }
             ]
         },
