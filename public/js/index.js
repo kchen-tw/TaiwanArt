@@ -24,6 +24,12 @@ $(document).ready(function() {
         event.preventDefault();
     });
 
+    $('#imgUploadModal').on('hidden.bs.modal', function(event) {
+        console.log("Modal close");
+        $('#intput-image-preview').css('background-image', '');
+        $('#output-image-preview').css('background-image', '');
+    });
+
     $.uploadPreview({
         input_field: '#intput-image-upload',
         preview_box: '#intput-image-preview',
