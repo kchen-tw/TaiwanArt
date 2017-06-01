@@ -14,7 +14,7 @@ $(function() {
             "paintings": [{
                     "name": "淡水夕照",
                     "imgurl": "https://i.imgur.com/xsWzJoW.jpg",
-                    "imgfile":"OCT1_35.jpg", 
+                    "imgfile": "OCT1_35.jpg",
                     "model": "OCT1_35"
                 },
                 {
@@ -47,7 +47,7 @@ $(function() {
             "paintings": [{
                     "name": "自畫像",
                     "imgurl": "https://i.imgur.com/WbKjU85.jpg",
-                    "imgfile": "chenchihchi_self.jpg", 
+                    "imgfile": "chenchichi_self.jpg",
                     "model": "chenchihchi_self"
                 },
                 {
@@ -68,7 +68,7 @@ $(function() {
             "paintings": [{
                     "name": "台中豐原道",
                     "imgurl": "https://i.imgur.com/RUbHHTb.jpg",
-                    "imgfile": "Ishikawa_Taichung.jpg", 
+                    "imgfile": "Ishikawa_Taichung.jpg",
                     "model": "Ishikawa_Taichung"
                 },
                 {
@@ -103,7 +103,7 @@ $(function() {
             "paintings": [{
                     "name": "台灣農民作家楊逵之家",
                     "imgurl": "https://i.imgur.com/Fnmb16k.jpg",
-                    "imgfile":"Huang_Home_of_the_Farmer_Writer_Yang_Kui_in_Taiwan.jpg", 
+                    "imgfile": "Huang_Home_of_the_Farmer_Writer_Yang_Kui_in_Taiwan.jpg",
                     "model": "Huang_Home_of_the_Farmer_Writer_Yang_Kui_in_Taiwan"
                 },
                 {

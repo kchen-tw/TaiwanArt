@@ -78,7 +78,7 @@
                 <div class="col-4" v-for="painting in painter.paintings">
                     <div class="painting">
                         <div class="painting-img">
-                            <a href="#"><img class="painting-img" v-bind:src="painting.imgurl" v-bind:data-name="painting.name" v-bind:data-model="painting.model"></a>
+                            <a href="#"><img class="painting-img" v-bind:src="'./img/painting/'+painting.imgfile" v-bind:data-name="painting.name" v-bind:data-model="painting.model"></a>
                         </div>
                         <div class="painting-name">
                             {{painting.name}}

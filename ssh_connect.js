@@ -68,7 +68,7 @@ exports.process = function() {
                 });
                 var input_filename = '~/' + config.cluster.input_dir + '/' + options.filename;
                 var output_filename = '~/' + config.cluster.output_dir + '/' + options.filename;
-                var model_filename = '~/' + config.cluster.model;
+                var model_filename = '~/' + config.cluster.model + '/' + options.model + '.model';
                 // stream.write('cd ' + config.cluster.output_dir + '\n');
                 stream.write(`rm ${output_filename}\n`);
                 stream.write(`cd ~/${config.cluster.styleTransferDir}\n`);

@@ -33,15 +33,16 @@ app.get('/list', function(req, res) {
 
 
 
-app.post('/imageupload', multer({
+app.post('/imageupload/:model', multer({
     storage: storage
 }).single('upload'), function(req, res) {
-
+    console.log(req.params.model);
     // var imageProcess = require("./image_generate.js");
     var ssh = require("./ssh_connect.js");
     var options = {
             path: req.file.path,
-            filename: req.file.filename
+            filename: req.file.filename,
+            model: req.params.model
         }
         // console.log(options);
     ssh.setOptions(options)

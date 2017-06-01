@@ -11,6 +11,7 @@ $(document).ready(function() {
         var name = $(this).attr('data-name');
         var model = $(this).attr('data-model');
         $('#imgUploadModal .modal-title').text(name);
+        $('#imgUploadModal input[type=file]').attr('model', model);
         $('#imgUploadModal').modal('show')
     });
     $('#painter-select').bind('change', function(event) {
@@ -36,13 +37,14 @@ $(document).ready(function() {
             var loader = new Loader($('.loader-wrapper'));
             loader.start();
             // var data = new FormData();
+            var model = $('#imgUploadModal input[type=file]').attr('model');
             if (file) {
                 // data.append('file', file);
                 var data = new FormData();
                 data.append('upload', file);
                 $.ajax({
                     type: "POST",
-                    url: 'imageupload',
+                    url: 'imageupload/' + model,
                     data: data,
                     cache: false,
                     contentType: false,
