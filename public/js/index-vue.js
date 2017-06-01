@@ -55,6 +55,11 @@ $(function() {
                     "imgfile": "chenchichi_Dashuchurch.jpg",
                     "model": "chenchichi__Dashuchurch"
                 },
+                {
+                    "name": "",
+                    "imgfile": "chenchichi_Dashuchurch.jpg",
+                    "model": "chenchichi__Dashuchurch"
+                },
             ]
         },
         {
@@ -85,7 +90,7 @@ $(function() {
             "introduction": "1945，每一次的空襲，都是他的妻子，背著他與石川老師的畫作，逃跑；這些用生命保存下來的作品，給我們了一絲的機會，認識老畫家，還有他的年代。為什麼除了他的作品外，還有石川欽一郎的呢？原來倪蔣懷先生除了是台灣第一位水彩畫家外，更是第一代的收藏家。",
             "paintings": [{
                 "name": "田寮港畔看基隆郵局",
-                "imgfile": "Ni_keelung.jpg",
+                "imgfile": "Ni_Ｋeelung.jpg",
                 "model": "NI_Keelung02"
             }]
         },
