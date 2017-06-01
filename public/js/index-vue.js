@@ -24,7 +24,7 @@ $(function() {
                 {
                     "name": "嘉義街景",
                     "imgfile": "OCS1_03.jpg",
-                    "model": "OCS1_03"
+                    "model": "OCS1_06"
                 },
                 {
                     "name": "玉山積雪",
@@ -43,12 +43,12 @@ $(function() {
             "paintings": [{
                     "name": "自畫像",
                     "imgfile": "chenchichi_self.jpg",
-                    "model": "chenchihchi_self"
+                    "model": "chenchichi_self"
                 },
                 {
                     "name": "台灣風景",
-                    "imgfile": "chenchihchi_Taiwan.png",
-                    "model": "chenchihchi_Taiwan"
+                    "imgfile": "chenchichi_Taiwan.png",
+                    "model": "chenchichi_Taiwan"
                 }
             ]
         },
@@ -61,13 +61,11 @@ $(function() {
             "introduction": "石川欽一郎，一位留歐的紳士，是台灣藝壇的開山祖師，桃李滿門，今日我們所談的台灣前輩藝術家們，幾乎就是石川同學會！",
             "paintings": [{
                     "name": "台中豐原道",
-                    "imgurl": "https://i.imgur.com/RUbHHTb.jpg",
                     "imgfile": "Ishikawa_Taichung.jpg",
                     "model": "Ishikawa_Taichung"
                 },
                 {
                     "name": "總督府",
-                    "imgurl": "https://i.imgur.com/drIvSH1.jpg",
                     "imgfile": "Ishikawa_taiwan.jpg",
                     "model": "Ishikawa_taiwan"
                 }
@@ -82,7 +80,6 @@ $(function() {
             "introduction": "1945，每一次的空襲，都是他的妻子，背著他與石川老師的畫作，逃跑；這些用生命保存下來的作品，給我們了一絲的機會，認識老畫家，還有他的年代。為什麼除了他的作品外，還有石川欽一郎的呢？原來倪蔣懷先生除了是台灣第一位水彩畫家外，更是第一代的收藏家。",
             "paintings": [{
                 "name": "田寮港畔看基隆郵局",
-                "imgurl": "https://i.imgur.com/1gg3u3Q.jpg",
                 "imgfile": "NI_Keelung02.jpg",
                 "model": "NI_Keelung02"
             }]
@@ -96,13 +93,12 @@ $(function() {
             "introduction": "馬場町現在是台北河濱的親水公園，但在五十年前，他卻不是這樣悠閒的好去處。冤！冤！冤！他的學生說，這是他們最後聽到老師講的幾個字，然後就再也看不到他了，為了自保，他們有很長一段時間，不會說自己是“他”的學生。",
             "paintings": [{
                     "name": "台灣農民作家楊逵之家",
-                    "imgurl": "https://i.imgur.com/Fnmb16k.jpg",
                     "imgfile": "Huang_Home_of_the_Farmer_Writer_Yang_Kui_in_Taiwan.jpg",
                     "model": "Huang_Home_of_the_Farmer_Writer_Yang_Kui_in_Taiwan"
                 },
                 {
                     "name": "恐怖的檢查",
-                    "imgurl": "https://i.imgur.com/d9WfQLr.jpg",
+                    "imgfile": "Huang_Pullover.jpg",
                     "model": "Huang_Pullover"
                 }
             ]
@@ -116,7 +112,6 @@ $(function() {
             "introduction": "",
             "paintings": [{
                 "name": "婦女頭像",
-                "imgurl": "https://i.imgur.com/c60xGGU.jpg",
                 "imgfile": "huangtushui_womwn.jpg",
                 "model": "huangtushui_womwn"
             }]
@@ -130,7 +125,6 @@ $(function() {
             "introduction": "鹽月桃甫是末代武士的後代，因為民治維新而一貧如洗，身為么子的他，因為與祖父同天生日，被認為是祖父轉世，性命才得以保住。因為經濟需要而來台任教，從此開啟了他與台灣藝壇的情緣，特別是在藝術教育和原住民繪畫上。",
             "paintings": [{
                 "name": "泰雅之女",
-                "imgurl": "https://i.imgur.com/1D3EfjE.jpg",
                 "imgfile": "Shiotsuki_Taiyiwoman.jpg",
                 "model": "Shiotsuki_Taiyiwoman"
             }]
@@ -144,7 +138,6 @@ $(function() {
             "introduction": "",
             "paintings": [{
                 "name": "新店溪",
-                "imgurl": "https://i.imgur.com/cAlF8Ra.jpg",
                 "imgfile": "Gobara_HsinTein.jpg",
                 "model": "Gobara_HsinTein"
             }]
