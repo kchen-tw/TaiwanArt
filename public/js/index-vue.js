@@ -8,10 +8,11 @@ $(function() {
         data: {
             painters: [{
                     "name": "陳澄波",
+                    "tag": "chen_chengpo",
                     "profileimg": "chen_chengpo.jpg",
                     "homepage": "chen_chengpo.html",
                     "dates": "台灣 （1895 - 1947）",
-                    "introduction": "1895，是個時代的改變，他來到了這世界；1945，他離開了，也是因為時代的改變。在他年輕的歲月裡，父母相繼過世，依靠叔父的他，每天除了上學，還要撿柴、撿蕃薯，但這沒改變他的求學熱情，長大後他反而成為了一個熱心助人的藝術家，以純真浪漫的性情，表現出了台灣迷人的特質。二二八事件後，他因參與和平使節，被他所認同的政府無情的槍決...",
+                    "introduction": "「我是油彩的化身。」1895，是個時代的改變，他來到了這世界；1945，他離開了，也是因為時代的改變。在他年輕的歲月裡，父母相繼過世，依靠叔父的他，每天除了上學，還要撿柴、撿蕃薯，但這沒改變他的求學熱情，長大後他反而成為了一個熱心助人的藝術家，以純真浪漫的性情，表現出了台灣迷人的特質。二二八事件後，他因參與和平使節，被他所認同的政府無情的槍決...",
                     "paintings": [{
                             "name": "淡水夕照",
                             "imgurl": "https://i.imgur.com/xsWzJoW.jpg",
@@ -36,6 +37,7 @@ $(function() {
                 },
                 {
                     "name": "陳植棋",
+                    "tag": "chen_chihchi",
                     "profileimg": "chen_chihchi.jpg",
                     "homepage": "chen_chihchi.html",
                     "dates": "台灣 （1906 - 1931）",
@@ -54,10 +56,11 @@ $(function() {
                 },
                 {
                     "name": "石川欽一郎",
+                    "tag": "ishikawa_chinichiro",
                     "profileimg": "ishikawa_chinichiro.jpg",
                     "homepage": "ishikawa_chinichiro.html",
                     "dates": "日本 （1871 - 1945）",
-                    "introduction": "",
+                    "introduction": "石川欽一郎，一位留歐的紳士，是台灣藝壇的開山祖師，桃李滿門，今日我們所談的台灣前輩藝術家們，幾乎就是石川同學會！",
                     "paintings": [{
                             "name": "台中豐原道",
                             "imgurl": "https://i.imgur.com/RUbHHTb.jpg",
@@ -72,6 +75,7 @@ $(function() {
                 },
                 {
                     "name": "倪蔣懷",
+                    "tag": "ni_chianghuai",
                     "profileimg": "ni_chianghuai.jpg",
                     "homepage": "ni_chianghuai.html",
                     "dates": "台灣 （1894 - 1943）",
@@ -84,6 +88,7 @@ $(function() {
                 },
                 {
                     "name": "黃榮燦",
+                    "tag": "huang_jungtsan",
                     "profileimg": "huang_jungtsan.jpg",
                     "homepage": "huang_jungtsan.html",
                     "dates": "台灣 （1920 - 1952）",
@@ -102,6 +107,7 @@ $(function() {
                 },
                 {
                     "name": "黃土水",
+                    "tag": "huang_tushui",
                     "profileimg": "huang_tushui.gif",
                     "homepage": "huang_tushui.html",
                     "dates": "台灣 （1895 - 1930）",
@@ -114,6 +120,7 @@ $(function() {
                 },
                 {
                     "name": "鹽月桃甫",
+                    "tag": "shiotsuki_toho",
                     "profileimg": "shiotsuki_toho.jpg",
                     "homepage": "shiotsuki_toho.html",
                     "dates": "日本 （1886 - 1954）",
@@ -126,6 +133,7 @@ $(function() {
                 },
                 {
                     "name": "鄉原古統",
+                    "tag": "gobara_koto",
                     "profileimg": "gobara_koto.jpg",
                     "homepage": "gobara_koto.html",
                     "dates": "日本 （1887 - 1965）",
