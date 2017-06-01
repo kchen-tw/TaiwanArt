@@ -64,8 +64,9 @@ footer {
     border-radius: 0.9rem;
 }
 
-.logo {
-    width: auto;
+img.logo {
+    width: 70%;
+    max-width: 90%;
     /*height: 50px;*/
 }
 
@@ -116,16 +117,48 @@ footer {
     font-weight: 800;
 }
 
+@media (max-width: 576px) {
+    img.logo {
+        width: auto;
+        max-width: 70%;
+    }
+    .jumbotron div.twart {
+        font-size: 1.3em;
+    }
+    .jumbotron div.explore {
+        font-size: 1.5em;
+    }
+    .jumbotron div.explore-en {
+        font-size: 1.5em;
+    }
+    .jumbotron div.twart-en {
+        font-size: 1em;
+    }
+    .jumbotron div.with-en {
+        font-size: 1em;
+    }
+}
+
+@media (max-width: 768px) {
+    img.logo {
+        width: auto;
+        max-width: 90%;
+    }
+    .jumbotron div.twart {
+        font-size: 2em;
+    }
+    .jumbotron div.explore {
+        font-size: 1.8em;
+    }
+}
+
 .profileimg {
-    width: 120px;
-    height: 160px;
+    width: auto;
+    max-width: 80%;
     position: relative;
     overflow: hidden;
-    margin-left: auto;
-    margin-right: auto;
-    background-image: url("/img/painter/chen_chengpo.jpg");
-    background-size: cover;
-    background-repeat: no-repeat;
+    margin-left: 1rem;
+    margin-right: 1rem;
 }
 
 .painter-name {
@@ -171,11 +204,7 @@ div.painting {
     /*display: inline;*/
     margin-left: 1em;
     margin-right: 1em;
-    box-shadow: 0px 4px 20px 0px rgba(0, 0, 0, 0.2);
-}
-
-section.painting {
-    text-align: center;
+    box-shadow: 3px 4px 15px 2px rgba(0, 0, 0, 0.2);
 }
 
 .painting-name {
@@ -185,4 +214,9 @@ section.painting {
     margin-top: 0.5em;
     margin-bottom: 1em;
     padding-bottom: 0.5em;
+}
+
+.painting-img {
+    width: auto;
+    max-width: 100%;
 }
