@@ -84,7 +84,6 @@
 
                     // Success callback function call
                     if (settings.success_callback) {
-                        $(settings.input_field).val(file);
                         settings.success_callback(file);
                     }
                 } else {

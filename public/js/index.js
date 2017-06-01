@@ -28,6 +28,8 @@ $(document).ready(function() {
         console.log("Modal close");
         $('#intput-image-preview').css('background-image', '');
         $('#output-image-preview').css('background-image', '');
+        var input = $('#intput-image-upload');
+        input.replaceWith(input.val('').clone(true));
     });
 
     $.uploadPreview({
