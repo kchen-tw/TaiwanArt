@@ -70,7 +70,7 @@ exports.process = function() {
                 var output_filename = '~/' + config.cluster.output_dir + '/' + options.filename;
                 var model_filename = '~/' + config.cluster.model + '/' + options.model + '.model';
                 // stream.write('cd ' + config.cluster.output_dir + '\n');
-                stream.write(`rm ${output_filename}\n`);
+                // stream.write(`rm ${output_filename}\n`);
                 stream.write(`cd ~/${config.cluster.styleTransferDir}\n`);
                 stream.write('python generate.py ' + input_filename + ' -m ' + model_filename + ' -o ' + output_filename + ' -g ' + config.cluster.gpu + ' \n');
                 stream.write(`rm ${input_filename}\n`);

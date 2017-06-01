@@ -103,7 +103,7 @@
             // Check if FileReader is available
             if (window.File && window.FileList && window.FileReader) {
                 if (typeof($(settings.input_field)) !== 'undefined' && $(settings.input_field) !== null) {
-                    $(settings.input_field).val('');
+
 
                     dragDropEffect();
 
