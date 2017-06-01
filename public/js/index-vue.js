@@ -56,7 +56,7 @@ $(function() {
                     "model": "chenchichi__Dashuchurch"
                 },
                 {
-                    "name": "",
+                    "name": "柿子與八角盤",
                     "imgfile": "chenchichi_Dashuchurch.jpg",
                     "model": "chenchichi__Dashuchurch"
                 },
