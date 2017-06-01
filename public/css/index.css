@@ -7,6 +7,13 @@ body {
     height: 50px;
 }
 
+.separator-line {
+    border-bottom-style: solid;
+    border-bottom-width: 2px;
+    margin-bottom: 40px;
+    border-bottom-color: rgba(152, 120, 0, 0.5);
+}
+
 #intput-image-preview,
 #output-image-preview {
     width: 400px;

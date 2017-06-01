@@ -45,96 +45,61 @@
                             <option value="chen_chihchi">陳植棋</option>
                             <option value="gobara_koto">鄉原古統</option>
                             <option value="huang_jungtsan">黃榮燦</option>
-                            <option value="huang_tushui.gif">黃土水</option>
+                            <option value="huang_tushui">黃土水</option>
                             <option value="ishikawa_chinichiro">鹽月桃甫</option>
                             <option value="ni_chianghuai">倪蔣懷</option>
-                            <option value="shiotsuki_toho.jpg">石川欽一郎</option>
+                            <option value="shiotsuki_toho">石川欽一郎</option>
                         </select>
                     </div>
                 </div>
             </div>
     </section>
     <div class="separator"></div>
-    <!-- 畫家資料 -->
-    <section class="painter">
-        <div class="container">
+
+
+    <section id="painter-list">
+        <div class="container" v-for="painter in painters">
+            <!-- 畫家資料 -->
             <div class="row">
                 <div class="col-3">
-                    <img class="profileimg" src="./img/painter/chen_chengpo.jpg" alt="">
+                    <img class="profileimg" v-bind:src="'./img/painter/'+painter.profileimg" alt="">
                 </div>
                 <div class="col-3">
-                    <div class="painter-name">陳澄波</div>
-                    <div class="painter-dates">台灣(1895 - 1947)</div>
+                    <div class="painter-name">{{painter.name}}</div>
+                    <div class="painter-dates">{{painter.dates}}</div>
                 </div>
                 <div class="col">
                     <div class="painter-introduction">
-                        1895，是個時代的改變，他來到了這世界；1945，他離開了，也是因為時代的改變。在他年輕的歲月裡，父母相繼過世，依靠叔父的他，每天除了上學，還要撿柴、撿蕃薯，但這沒改變他的求學熱情，長大後他反而成為了一個熱心助人的藝術家，以純真浪漫的性情，表現出了台灣迷人的特質。二二八事件後，他因參與和平使節，被他所認同的政府無情的槍決...
+                        {{painter.introduction}}
                     </div>
                     <div class="more">
-                        <button class=" btn btn-outline-warning btn-more">更多故事</button>
+                        <a v-bind:href="'./artists_homepage/artist/'+painter.homepage" class="btn btn-outline-warning btn-more">更多故事</a>
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
-    <div class="separator"></div>
-    <!-- 畫家作品 -->
-    <section class="painting">
-        <div class="container">
+            <div class="separator"></div>
+
+            <!-- 畫家作品 -->
             <div class="row">
-                <div class="col-4">
+
+                <div class="col-4" v-for="painting in painter.paintings">
                     <div class="painting">
                         <div class="painting-img">
-                            <img class="painting-img" src="./img/painting/OW1_05.jpg">
+                            <img class="painting-img" v-bind:src="painting.imgurl">
                         </div>
                         <div class="painting-name">
-                            玉山積雪
+                            {{painting.name}}
                         </div>
                     </div>
                 </div>
-                <div class="col-4">
-                    <div class="painting">
-                        <div class="painting-img">
-                            <img class="painting-img" src="./img/painting/OW1_05.jpg">
-                        </div>
-                        <div class="painting-name">
-                            玉山積雪
-                        </div>
-                    </div>
-                </div>
-                <div class="col-4">
-                    <div class="painting">
-                        <div class="painting-img">
-                            <img class="painting-img" src="./img/painting/OW1_05.jpg">
-                        </div>
-                        <div class="painting-name">
-                            玉山積雪
-                        </div>
-                    </div>
-                </div>
-                <div class="col-4">
-                    <div class="painting">
-                        <div class="painting-img">
-                            <img class="painting-img" src="./img/painting/OW1_05.jpg">
-                        </div>
-                        <div class="painting-name">
-                            玉山積雪
-                        </div>
-                    </div>
-                </div>
-                <div class="col-4">
-                    <div class="painting">
-                        <div class="painting-img">
-                            <img class="painting-img" src="./img/painting/OW1_05.jpg">
-                        </div>
-                        <div class="painting-name">
-                            玉山積雪
-                        </div>
-                    </div>
-                </div>
+
             </div>
-        </div>
+            <div class="separator separator-line"></div>
+
     </section>
+
+
+
     <div class="separator"></div>
 
     <section class="style-transfer hide">
@@ -148,8 +113,8 @@
                     <div class="form-group">
 
                         <div id="intput-image-preview">
-                            <label for="intput-image-upload" id="intput-image-label ">選擇影像</label>
-                            <input type="file" name="upload" id="intput-image-upload " accept="image/* " required />
+                            <label for="intput-image-upload" id="intput-image-label">選擇影像</label>
+                            <input type="file" name="upload" id="intput-image-upload" accept="image/*" required />
                         </div>
                     </div>
 
@@ -170,7 +135,7 @@
     <section class="footer">
         <div class="container">
             <div class="row">
-                <div class="col ">
+                <div class="col">
                     <footer class="text-center">
                         <div> © 2017 Chloe Su and Kun Chen, logo designed by Yen-Ching Yang</div>
                     </footer>
@@ -179,17 +144,18 @@
         </div>
     </section>
 
-    <div class="loader-wrapper hide ">
-        <div class="loader "></div>
+    <div class="loader-wrapper hide">
+        <div class="loader"></div>
     </div>
     <!-- jQuery first, then Tether, then Bootstrap JS. -->
-    <script type="text/javascript " src="./js/jquery-3.2.1.js "></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js " integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb " crossorigin="anonymous "></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js " integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn " crossorigin="anonymous "></script>
-    <script type="text/javascript " src="./js/loader.js "></script>
-    <script type="text/javascript " src="./js/jquery.uploadPreview.js "></script>
+    <script src="./js/jquery-3.2.1.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
     <script src="https://unpkg.com/vue"></script>
-    <script type="text/javascript " src="./js/index.js "></script>
+    <script src="./js/loader.js"></script>
+    <script src="./js/jquery.uploadPreview.js"></script>
+    <script src="./js/index-vue.js"></script>
+    <script src="./js/index.js"></script>
 </body>
 
 </html>
