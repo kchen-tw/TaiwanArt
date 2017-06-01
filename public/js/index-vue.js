@@ -23,7 +23,7 @@ $(function() {
                 },
                 {
                     "name": "嘉義街景",
-                    "imgfile": "OCS1_06.jpg",
+                    "imgfile": "OCT1_06.jpg",
                     "model": "OCS1_06"
                 },
                 {
