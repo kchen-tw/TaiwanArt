@@ -14,21 +14,25 @@ $(function() {
             "paintings": [{
                     "name": "淡水夕照",
                     "imgurl": "https://i.imgur.com/xsWzJoW.jpg",
+                    "imgfile":"OCT1_35.jpg", 
                     "model": "OCT1_35"
                 },
                 {
                     "name": "清流",
                     "imgurl": "https://i.imgur.com/2A5poTz.jpg",
+                    "imgfile": "OCS1_03.jpg",
                     "model": "OCS1_03"
                 },
                 {
                     "name": "嘉義街景",
                     "imgurl": "https://i.imgur.com/EETjohr.jpg",
+                    "imgfile": "OCS1_03.jpg",
                     "model": "OCS1_03"
                 },
                 {
                     "name": "玉山積雪",
                     "imgurl": "https://i.imgur.com/ql0dvWK.jpg",
+                    "imgfile": "OW1_05.jpg",
                     "model": "OW1_05"
                 }
             ]
@@ -43,11 +47,13 @@ $(function() {
             "paintings": [{
                     "name": "自畫像",
                     "imgurl": "https://i.imgur.com/WbKjU85.jpg",
+                    "imgfile": "chenchihchi_self.jpg", 
                     "model": "chenchihchi_self"
                 },
                 {
                     "name": "台灣風景",
                     "imgurl": "https://i.imgur.com/csXWZA3.jpg",
+                    "imgfile": "chenchihchi_Taiwan.jpg",
                     "model": "chenchihchi_Taiwan"
                 }
             ]
@@ -62,11 +68,13 @@ $(function() {
             "paintings": [{
                     "name": "台中豐原道",
                     "imgurl": "https://i.imgur.com/RUbHHTb.jpg",
+                    "imgfile": "Ishikawa_Taichung.jpg", 
                     "model": "Ishikawa_Taichung"
                 },
                 {
                     "name": "總督府",
                     "imgurl": "https://i.imgur.com/drIvSH1.jpg",
+                    "imgfile": "Ishikawa_taiwan.jpg",
                     "model": "Ishikawa_taiwan"
                 }
             ]
@@ -81,6 +89,7 @@ $(function() {
             "paintings": [{
                 "name": "田寮港畔看基隆郵局",
                 "imgurl": "https://i.imgur.com/1gg3u3Q.jpg",
+                "imgfile": "NI_Keelung02.jpg",
                 "model": "NI_Keelung02"
             }]
         },
@@ -94,6 +103,7 @@ $(function() {
             "paintings": [{
                     "name": "台灣農民作家楊逵之家",
                     "imgurl": "https://i.imgur.com/Fnmb16k.jpg",
+                    "imgfile":"Huang_Home_of_the_Farmer_Writer_Yang_Kui_in_Taiwan.jpg", 
                     "model": "Huang_Home_of_the_Farmer_Writer_Yang_Kui_in_Taiwan"
                 },
                 {
@@ -113,6 +123,7 @@ $(function() {
             "paintings": [{
                 "name": "婦女頭像",
                 "imgurl": "https://i.imgur.com/c60xGGU.jpg",
+                "imgfile": "huangtushui_womwn.jpg",
                 "model": "huangtushui_womwn"
             }]
         },
@@ -126,6 +137,7 @@ $(function() {
             "paintings": [{
                 "name": "泰雅之女",
                 "imgurl": "https://i.imgur.com/1D3EfjE.jpg",
+                "imgfile": "Shiotsuki_Taiyiwoman.jpg",
                 "model": "Shiotsuki_Taiyiwoman"
             }]
         },
@@ -139,6 +151,7 @@ $(function() {
             "paintings": [{
                 "name": "新店溪",
                 "imgurl": "https://i.imgur.com/cAlF8Ra.jpg",
+                "imgfile": "Gobara_HsinTein.jpg",
                 "model": "Gobara_HsinTein"
             }]
         }
