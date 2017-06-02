@@ -66,7 +66,7 @@ $(function() {
             "name": "石川欽一郎",
             "tag": "ishikawa_chinichiro",
             "profileimg": "ishikawa_chinichiro.jpg",
-            "homepage": "ishikawa_chinichiro.html",
+            "homepage": "ishikawa_chinchiro.html",
             "dates": "日本 （1871 - 1945）",
             "introduction": "石川欽一郎，一位留歐的紳士，是台灣藝壇的開山祖師，桃李滿門，今日我們所談的台灣前輩藝術家們，幾乎就是石川同學會！",
             "paintings": [{
