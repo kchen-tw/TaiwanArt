@@ -11,7 +11,7 @@ module.exports = {
         host: '140.112.51.223',
         port: 22,
         styleTransferDir: 'NTU2017DeepArt/src/chainer-fast-neuralstyle',
-        model: 'NTU2017DeepArt/models',
+        model: 'NTU2017DeepArt/TaiwanArt/model',
         input_dir: 'NTU2017DeepArt/ForApp/imagesFromApp',
         output_dir: 'NTU2017DeepArt/ForApp/imagesToApp',
         gpu: "0"
