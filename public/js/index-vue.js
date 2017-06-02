@@ -150,6 +150,11 @@ $(function() {
                 "name": "新店溪",
                 "imgfile": "Gobara_HsinTein.jpg",
                 "model": "Gobara_HsinTein"
+            },
+            {
+                "name": "台灣總督府夜景",
+                "imgfile": "Gobara_Taiwan_palace.jpg",
+                "model": "Gobara_Taiwan_palace"
             }]
         }
     ];
