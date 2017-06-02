@@ -119,7 +119,7 @@ $(function() {
             "profileimg": "huang_tushui.gif",
             "homepage": "huang_tushui.html",
             "dates": "台灣 （1895 - 1930）",
-            "introduction": "",
+            "introduction": "一封校長的推薦信，改變了他的人生，他帶著南國子弟的期望，遠赴東京。生在這個國家，就愛這個國家。他努力以作品告訴日本友人，國境之南，不是蠻荒之地，而是寶島。第一位入選帝展的藝術家，是他，黃土水。",
             "paintings": [{
                 "name": "婦女頭像",
                 "imgfile": "huangtushui_womwn.jpg",
