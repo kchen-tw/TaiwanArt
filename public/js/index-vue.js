@@ -53,12 +53,12 @@ $(function() {
                 {
                     "name": "淡水教堂",
                     "imgfile": "chenchichi_Dashuchurch.jpg",
-                    "model": "chenchichi__Dashuchurch"
+                    "model": "chenchichi_Dashuchurch"
                 },
                 {
                     "name": "柿子與八角盤",
-                    "imgfile": "chenchichi_Dashuchurch.jpg",
-                    "model": "chenchichi__Dashuchurch"
+                    "imgfile": "chenchichi_food.jpg",
+                    "model": "chenchichi_food"
                 },
             ]
         },
