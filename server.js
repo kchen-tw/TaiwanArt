@@ -36,7 +36,7 @@ app.get('/list', function(req, res) {
 app.post('/imageupload/:model', multer({
     storage: storage
 }).single('upload'), function(req, res) {
-    console.log(req.params.model);
+    // console.log(req.params.model);
     // var imageProcess = require("./image_generate.js");
     var ssh = require("./ssh_connect.js");
     var options = {

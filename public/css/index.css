@@ -236,3 +236,17 @@ div.painting {
     width: auto;
     max-width: 80%;
 }
+
+#top {
+    position: fixed;
+    bottom: 0px;
+    right: 0px;
+    opacity: 0.5;
+}
+
+#top:hover {
+    position: fixed;
+    bottom: 0px;
+    right: 0px;
+    opacity: 1;
+}

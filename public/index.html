@@ -5,6 +5,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
+    <meta property="fb:app_id" content="2013239968896148">
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Taiwan Art">
+    <meta property="og:url" content="https://taiwan-art.kchen.club/">
+    <meta property="og:image" content="https://taiwan-art.kchen.club/img/logo-meta.png?2">
+    <meta property="og:description" content="用台灣的藝術探索世界 Explore the World with Taiwan Artists & Their Friends">
+
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Taiwan Art</title>
 
@@ -12,24 +19,9 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
     <link rel="stylesheet" href="./css/loader.css">
     <link rel="stylesheet" href="./css/index.css">
-    <style>
-        #top{
-            position:fixed;
-            bottom:0px;
-            right:0px;
-            opacity:0.5;
-        }
-        #top:hover{
-            position:fixed;
-            bottom:0px;
-            right:0px;
-            opacity:1;
-        }
-    </style>
 </head>
 
 <body>
-    <a href="#"><img src="top.png" id="top" height="60" width="60" /></a>
     <section class="logo">
         <div class="container">
             <div class="jumbotron">
@@ -158,10 +150,35 @@
             </div>
         </div>
     </section>
-
+    <a href="#"><img src="top.png" id="top" height="60" width="60" /></a>
     <div class="loader-wrapper hide">
         <div class="loader"></div>
     </div>
+
+    <div class="fb-like" data-share="true" data-width="450" data-show-faces="true">
+    </div>
+
+    <script>
+        window.fbAsyncInit = function() {
+            FB.init({
+                appId: '2013239968896148',
+                xfbml: true,
+                version: 'v2.9'
+            });
+            FB.AppEvents.logPageView();
+        };
+
+        (function(d, s, id) {
+            var js, fjs = d.getElementsByTagName(s)[0];
+            if (d.getElementById(id)) {
+                return;
+            }
+            js = d.createElement(s);
+            js.id = id;
+            js.src = "//connect.facebook.net/en_US/sdk.js";
+            fjs.parentNode.insertBefore(js, fjs);
+        }(document, 'script', 'facebook-jssdk'));
+    </script>
     <!-- jQuery first, then Tether, then Bootstrap JS. -->
     <script src="./js/jquery-3.2.1.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
