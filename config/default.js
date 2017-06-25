@@ -8,7 +8,7 @@ module.exports = {
     cluster: {
         username: 'ecchen',
         password: 'rae0ooJ_eic5bah5',
-        host: '140.112.51.223',
+        host: '140.112.51.222',
         port: 22,
         styleTransferDir: 'NTU2017DeepArt/src/chainer-fast-neuralstyle',
         model: 'NTU2017DeepArt/TaiwanArt/model',
