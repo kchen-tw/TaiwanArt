@@ -38,7 +38,7 @@ exports.upload = function() {
 
                 writeStream.on('end', function() {
                     console.log("sftp connection closed");
-                    conn.close();
+                    //conn.close();
                     resolve();
                 });
 

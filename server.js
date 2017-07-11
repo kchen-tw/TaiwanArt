@@ -45,20 +45,23 @@ app.post('/imageupload/:model', multer({
             model: req.params.model
         }
         // console.log(options);
-    ssh.setOptions(options)
-        .then(() => {
-            return ssh.upload();
-        })
-        .then(() => {
-            return ssh.process();
-        })
-        .then(() => {
-            return ssh.download();
-        })
-        .then((result) => {
-            res.json({ result: true, image: result })
-        });
-
+    try {
+        ssh.setOptions(options)
+            .then(() => {
+                return ssh.upload();
+            })
+            .then(() => {
+                return ssh.process();
+            })
+            .then(() => {
+                return ssh.download();
+            })
+            .then((result) => {
+                res.json({ result: true, image: result })
+            });
+    } catch (e) {
+        res.json({ result: false, message: e.message })
+    }
 
 
 
